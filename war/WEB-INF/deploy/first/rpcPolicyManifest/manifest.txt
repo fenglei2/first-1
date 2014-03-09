@@ -1,0 +1,4 @@
+# Module first
+# RPC service class, partial path of RPC policy file
+com.nian.firstproject.client.rpc.RpcService, 1BD8573ECCD3E55512DAA5FD893B8AB5.gwt.rpc
+com.nian.firstproject.client.dbconnection.DBConnection, 79FF57C0E0CB39292760FFC344C981C7.gwt.rpc

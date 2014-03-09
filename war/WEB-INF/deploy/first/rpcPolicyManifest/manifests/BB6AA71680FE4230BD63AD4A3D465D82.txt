@@ -1,0 +1,2 @@
+serviceClass: com.nian.firstproject.client.dbconnection.DBConnection
+path: 79FF57C0E0CB39292760FFC344C981C7.gwt.rpc

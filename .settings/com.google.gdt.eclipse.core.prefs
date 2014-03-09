@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+jarsExcludedFromWebInfLib=/Users/niannian/Desktop/prognosticsys/Jama-1.0.2.jar|/Users/niannian/Desktop/prognosticsys/gflot-2.4.3.jar|/Users/niannian/Desktop/prognosticsys/gwt-incubator-20101117-r1766.jar|/Users/niannian/Desktop/prognosticsys/swtbcanvasfont-0.3.jar|/Users/niannian/Desktop/prognosticsys/swtbfont-0.1.jar
+launchConfigExternalUrlPrefix=
+warSrcDir=war
+warSrcDirIsOutput=true

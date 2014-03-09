@@ -1,0 +1,2 @@
+serviceClass: com.nian.firstproject.client.rpc.RpcService
+path: 1BD8573ECCD3E55512DAA5FD893B8AB5.gwt.rpc

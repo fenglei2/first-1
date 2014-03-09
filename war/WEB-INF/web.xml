@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee;http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+	version="3.0">
+	<!-- Default page to serve -->
+	-
+	<welcome-file-list>
+		<welcome-file>HomePage1.html</welcome-file>
+	</welcome-file-list>
+<!-- Servlets -->
+
+	<servlet>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<servlet-class>com.google.api.server.spi.SystemServiceServlet
+		</servlet-class>
+
+		<init-param>
+			<param-name>services</param-name>
+			<param-value />
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<url-pattern>/_ah/spi/*</url-pattern>
+	</servlet-mapping>
+	<!-- new servlets -->
+
+	<servlet>
+		<servlet-name>rpcServlet</servlet-name>
+		<servlet-class>com.nian.firstproject.server.RpcServiceImpl
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>rpcServlet</servlet-name>
+		<url-pattern>/first/rpc</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>remoteLoggingServiceImpl</servlet-name>
+		<servlet-class>com.google.gwt.libideas.logging.server.RemoteLoggingServiceImpl
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>remoteLoggingServiceImpl</servlet-name>
+		<url-pattern>/first/logging</url-pattern>
+	</servlet-mapping>
+	<!-- Blob stuff -->
+
+	<servlet>
+		<servlet-name>Upload</servlet-name>
+		<servlet-class>com.nian.firstproject.server.Upload</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Serve</servlet-name>
+		<servlet-class>com.nian.firstproject.server.Serve</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Serve</servlet-name>
+		<url-pattern>/serve</url-pattern>
+	</servlet-mapping>
+	
+
+	  	<!-- use this if use mySQLConnection( google cloud sql, add similar stuff)
+	    		-->
+     <servlet>
+        <servlet-name>mySQLConnection</servlet-name>
+        <servlet-class>com.nian.firstproject.server.MySQLConnection</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mySQLConnection</servlet-name>
+        <url-pattern>/first/MySQLConnection</url-pattern>
+    </servlet-mapping>
+
+    
+    
+</web-app>
